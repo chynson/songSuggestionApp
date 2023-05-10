@@ -1,0 +1,26 @@
+
+<button (click)="goToLoginPage()">Login</button>
+<button (click)="goToRegisterPage()">Register</button>
+<button (click)="logout()">Logout</button>
+
+<div id="song-suggestion-posts" 
+    *ngIf="userID">
+
+    <p>Welcome {{ userName }}!</p>
+
+    <h2>Song Suggestion Posts:</h2>
+    <ul *ngFor="let post of postList">
+
+        <li (click)="viewPost">
+            {{ post.title }} by {{ post.artist }}
+        </li>
+
+    </ul>
+
+    <button (click)="createPost()">Suggest a song</button>
+
+</div>
+
+<p *ngIf="!userID">
+    Please login to view the song suggestion posts.
+</p>
