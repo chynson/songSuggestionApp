@@ -1,4 +1,3 @@
-export interface UserList {
-    userID: number;
-    userName: string;
+export interface User {
+    user_name: string;
 }

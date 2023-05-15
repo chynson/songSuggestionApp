@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'ssa-users',
@@ -6,22 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./users.component.scss']
 })
 export class UsersComponent {
-
-  login() {
-    
-  }
-
-
-  register() {
-
-  }
-
-  createUser() {
-    
-  }
-
-  userName = '';
-
-  
 
 }

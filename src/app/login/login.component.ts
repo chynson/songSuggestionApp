@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { UserList } from '../users/users';
 import { getCookie, setCookie } from 'typescript-cookie';
 
 @Component({
