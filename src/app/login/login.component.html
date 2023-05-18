@@ -7,7 +7,7 @@
         <th>User Name</th>
     </tr>
     <tr *ngFor="let user of userList">
-        <td><a (click)="loginAs(user)">{{ user }}</a></td>
+        <td><a (click)="loginAs(user)">{{ user.userName }}</a></td>
     </tr>
 </table>
 

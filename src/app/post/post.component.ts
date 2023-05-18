@@ -6,10 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./post.component.scss']
 })
 export class PostComponent {
-
+  
 }
 
-export interface post {
+export interface Post {
   title: string;
   artist: string;
+  description: string;
+  userID: number;
 }

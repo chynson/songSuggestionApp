@@ -10,11 +10,17 @@
 
     <h2>Song Suggestion Posts:</h2>
     <ul *ngFor="let post of postList">
-
-        <li (click)="viewPost">
-            {{ post.title }} by {{ post.artist }}
-        </li>
-
+        <div>
+            <li (click)="viewPost">
+                <em>{{ post.title }}</em> by <em>{{ post.artist }}</em>
+                <div>
+                    {{ post.description }}
+                    <br>
+                    Posted by: <em>{{ getUserName(post.userID) }}</em>
+                </div>
+            </li>
+                
+        </div>
     </ul>
 
     <button (click)="createPost()">Suggest a song</button>
