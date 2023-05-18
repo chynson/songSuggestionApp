@@ -36,7 +36,9 @@ export class LoginComponent implements OnInit {
       }
     );
   }
-
+  goToRegisterPage() {
+    this.router.navigate(['./register']);
+  }
   
   loginAs(user: User) {
     if (user.userID != -1) {

@@ -1,6 +1,8 @@
 
 <button (click)="goToHomePage()">Go Home</button>
 
+<h2>Register a new user</h2>
+
 <form (ngSubmit)="createUser()">
     <label for="userName">Username:</label>
     <input type="text" id="userName" name="userName" [(ngModel)]="userName">
